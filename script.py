@@ -27,13 +27,13 @@ terminate = ['bye','buy','shutdown','exit','quit','gotosleep','goodbye']
 
 def offline_speak(jarvis_speech):
     engine = pyttsx.init()
-    engine.say(jarvis_speech)
+    engine.say(pingle_speech)
     engine.runAndWait()
 
 def listen():
     r = sr.Recognizer()
     with sr.Microphone() as source:
-        print("Talk to J.A.R.V.I.S: ")
+        print("Talk to P.I.N.G.L.E: ")
         audio = r.listen(source)
     try:
         #  print (r.recognize_google(audio))
@@ -58,10 +58,10 @@ while True:
     if mode == "voice":
         response = listen()
     else:
-        response = raw_input("Talk to J.A.R.V.I.S : ")
+        response = raw_input("Talk to P.I.N.G.L.E : ")
     if response.lower().replace(" ","") in terminate:
         break
     jarvis_speech = kernel.respond(response)
-    print ("J.A.R.V.I.S: " + jarvis_speech)
-    offline_speak(jarvis_speech)
+    print ("P.I.N.G.L.E: " + pingle_speech)
+    offline_speak(pingle_speech)
     
