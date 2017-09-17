@@ -36,7 +36,7 @@ def listen():
         print("Talk to J.A.R.V.I.S: ")
         audio = r.listen(source)
     try:
-        print r.recognize_google(audio)
+        #  print (r.recognize_google(audio))
         return r.recognize_google(audio)
     except sr.UnknownValueError:
         offline_speak("I couldn't understand what you said! Would you like to repeat?")
@@ -62,6 +62,6 @@ while True:
     if response.lower().replace(" ","") in terminate:
         break
     jarvis_speech = kernel.respond(response)
-    print "J.A.R.V.I.S: " + jarvis_speech
+    print ("J.A.R.V.I.S: " + jarvis_speech)
     offline_speak(jarvis_speech)
     

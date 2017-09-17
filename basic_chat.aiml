@@ -16,7 +16,7 @@
     </category>
     
     <category>
-        <pattern>JARVIS</pattern>
+        <pattern>PINGLE</pattern>
         <template>
             <random>
                 <li>Welcome home sir!</li> 
@@ -60,14 +60,14 @@
     </category>
 
     <category>
-        <pattern>JARVIS *</pattern>
+        <pattern>PINGLE *</pattern>
         <template>
             <srai><star/></srai>
         </template>
     </category>
 
     <category>
-        <pattern>* JARVIS</pattern>
+        <pattern>* PINGLE</pattern>
         <template>
             <srai><star/></srai>
         </template>
@@ -76,42 +76,42 @@
     <category>
         <pattern>WHAT ARE YOU</pattern>
         <template>
-            I'm J.A.R.V.I.S
+            I'm P.I.N.G.L.E
         </template>
     </category>
 
     <category>
         <pattern>WHO CREATED YOU</pattern>
         <template>
-            Nihal Singh created me!
+            Aditi Mewada created me!
         </template>
     </category>
 
     <category>
         <pattern>WHO MADE YOU</pattern>
         <template>
-            Nihal Singh made me!
+            Aditi Mewada made me!
         </template>
     </category>
 
     <category>
-        <pattern>WHO CREATED JARVIS</pattern>
+        <pattern>WHO CREATED PINGLE</pattern>
         <template>
-            Nihal Singh created me!
+             Aditi Mewada created me!
         </template>
     </category>
 
     <category>
         <pattern>WHO IS YOUR CREATOR</pattern>
         <template>
-            Nihal Singh created me!
+             Aditi Mewada created me!
         </template>
     </category>
 
     <category>
-        <pattern>WHO IS NIHAL SINGH</pattern>
+        <pattern>WHO IS ADITI MEWADA</pattern>
         <template>
-            Nihal Singh is my father!
+             Aditi Mewada is my mother!
         </template>
     </category>
 
@@ -292,14 +292,14 @@
     <category>
         <pattern>PLAY ME A SONG</pattern>
         <template>
-            What song, sir?
+           What song, sir?
         </template>
     </category>
 
     <category>
-        <pattern>PLAY A SONG</pattern>
+        <pattern>WHAT IS AN INTERFACE</pattern>
         <template>
-            What song, sir?
+           An interface is a collection of abstract methods. A class implements an interface, thereby inheriting the abstract methods of the interface.
         </template>
     </category>
 
@@ -308,6 +308,77 @@
         <that>WHAT SONG SIR</that>
         <template>
             <srai>PLAY SONG <input index="1"/></srai>
+        </template>
+    </category>
+
+
+     <category>
+        <pattern>WHAT IS JAVA</pattern>
+        <template>
+            Java  is  a  general-purpose  computer  programming  language  that  is  concurrent, class-based, object-oriented, and  specifically  designed  to  have  as  few  implementation  dependencies  as  possible.
+        </template>
+    </category>
+
+    <category>
+        <pattern></pattern>
+        <template>
+            Java  is  a  general-purpose  computer  programming  language  that  is  concurrent, class-based, object-oriented, and  specifically  designed  to  have  as  few  implementation  dependencies  as  possible.
+        </template>
+    </category>
+    
+    <category>
+        <pattern>LIST FEATURES OF JAVA</pattern>
+        <template>
+            Some features include Object Oriented, Platform Independent, Robust, Interpreted, Multi-threaded
+        </template>
+    </category>
+
+    <category>
+        <pattern>WHY IS JAVA ARCHITECTURAL NEUTRAL</pattern>
+        <template>
+            It’s compiler generates an architecture-neutral object file format, which makes the compiled code to be executable on many processors, with the presence of Java runtime system.
+        </template>
+    </category>
+
+    <category>
+        <pattern>WHAT DO YOU MEAN BY OBJECT</pattern>
+        <template>
+            Object is a runtime entity and it’s state is stored in fields and behavior is shown via methods. Methods operate on an object's internal state and serve as the primary mechanism for object-to-object communication.
+        </template>
+    </category>
+
+    <category>
+        <pattern>WHAT IS AN INTERFACE</pattern>
+        <template>
+            An interface is a collection of abstract methods. A class implements an interface, thereby inheriting the abstract methods of the interface.
+        </template>
+    </category>
+
+    <category>
+        <pattern>WHAT IS ABSTRACTION</pattern>
+        <template>
+            It refers to the ability to make a class abstract in OOP. It helps to reduce the complexity and also improves the maintainability of the system.
+        </template>
+    </category>
+
+    <category>
+        <pattern>WHAT IS POLYMORPHISM</pattern>
+        <template>
+            Polymorphism is the ability of an object to take on many forms. The most common use of polymorphism in OOP occurs when a parent class reference is used to refer to a child class object.
+        </template>
+    </category>
+
+    <category>
+        <pattern>DEFINE INHERITANCE</pattern>
+        <template>
+            It is the process where one object acquires the properties of another. With the use of inheritance the information is made manageable in a hierarchical order.
+        </template>
+    </category>
+
+    <category>
+        <pattern>DEFINE CLASS</pattern>
+        <template>
+           A class is a blue print from which individual objects are created. A class can contain fields and methods to describe the behavior of an object.
         </template>
     </category>
 </aiml>

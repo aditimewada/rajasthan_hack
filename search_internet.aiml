@@ -10,7 +10,7 @@
                <li>Right away, sir! </li>
                <li>On it! </li>
             </random>
-            <system> chromium-browser "http://www.facebook.com"</system>
+            <system> start "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" http://www.facebook.com</system>
         </template>
     </category>
 
@@ -23,7 +23,7 @@
                <li>Right away, sir! </li>
                <li>On it! </li>
             </random>
-            <system> chromium-browser "http://www.google.com"</system>
+            <system> start "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" http://www.google.com </system>
         </template>
     </category>
 
@@ -36,7 +36,7 @@
                <li>Right away, sir! </li>
                <li>On it! </li>
             </random>
-            <system> chromium-browser "http://www.google.com/search?q=<star/>"</system>
+            <system> start "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" http://www.google.com/search?q=<star/></system>
         </template>
     </category>
 
@@ -62,7 +62,7 @@
                <li>Right away, sir! </li>
                <li>On it! </li>
             </random>
-            <system> chromium-browser "http://www.youtube.com"</system>
+            <system> start "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" http://www.youtube.com</system>
         </template>
     </category>
 
@@ -74,7 +74,7 @@
                <li>Right away, sir! </li>
                <li>On it! </li>
             </random>
-            <system> chromium-browser "https://www.youtube.com/results?search_query=<star/>"</system>
+            <system> start "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" https://www.youtube.com/results?search_query=<star/></system>
         </template>
     </category>
 
@@ -100,7 +100,7 @@
                <li>Right away, sir! </li>
                <li>On it! </li>
             </random>
-            <system> chromium-browser "https://www.google.co.in/maps/search/<star/>"</system>
+            <system> start "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" https://www.google.co.in/maps/search/<star/></system>
         </template>
     </category>
 
@@ -127,7 +127,7 @@
                <li>Right away, sir! </li>
                <li>On it! </li>
             </random>
-            <system> chromium-browser "<system> python youtube.py "<star/>"</system>"</system>
+            <system> start "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" http://www.google.com "<system> python youtube.py "<star/>"</system>"</system>
         </template>
     </category>
 
@@ -139,9 +139,30 @@
                <li>Right away, sir! </li>
                <li>On it! </li>
             </random>
-            <system> chromium-browser "<system> python youtube.py "<star/>"</system>"</system>
+            <system> start "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" https://www.youtube.com/results?search_query=<star/></system>
         </template>
     </category>
 
+     <category>
+        <pattern>LIST FEATURES OF JAVA</pattern>
+        <template>
+            Some features include Object Oriented, Platform Independent, Robust, Interpreted, Multi-threaded
+        </template>
+    </category>
+
+    <category>
+        <pattern>SEARCH *</pattern>
+        <template>
+            <system> python answer.py <star/></system>
+        </template>
+    </category>
+
+ 
+    <category>
+        <pattern>CALCULATE *</pattern>
+        <template>
+            <system> python calculate.py <star/></system>
+        </template>
+    </category>
 
 </aiml>
