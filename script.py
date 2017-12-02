@@ -25,7 +25,7 @@ terminate = ['bye','buy','shutdown','exit','quit','gotosleep','goodbye']
 #   while mixer.music.get_busy():
 #       time.sleep(1)
 
-def offline_speak(jarvis_speech):
+def offline_speak(pingle_speech):
     engine = pyttsx.init()
     engine.say(pingle_speech)
     engine.runAndWait()
@@ -61,7 +61,7 @@ while True:
         response = raw_input("Talk to P.I.N.G.L.E : ")
     if response.lower().replace(" ","") in terminate:
         break
-    jarvis_speech = kernel.respond(response)
+    pingle_speech = kernel.respond(response)
     print ("P.I.N.G.L.E: " + pingle_speech)
     offline_speak(pingle_speech)
     

@@ -1,6 +1,8 @@
 from bs4 import BeautifulSoup
 import urllib
-from urllib.request import urlopen
+# import urllib.requests
+from urllib2 import urlopen
+# import urlopen
 import requests
 import sys
 
